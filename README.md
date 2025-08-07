@@ -1,4 +1,4 @@
-# CORA
+# CogNote
 
 This repository contains the dataset and code for our paper: "CogNote: Generating Client-Centric Counseling Notes via Structured Summarization of CBT Dialogues".
 
