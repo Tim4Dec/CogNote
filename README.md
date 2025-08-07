@@ -113,7 +113,7 @@ We design four TI-Chain prompt variants corresponding to four common CBT strateg
 - **Divergent Thinking**: Extract and list the best-case scenario and corresponding evidence as *Best Case*, the worst-case scenario and corresponding evidence as *Worst Case*, and the most possible scenario and corresponding evidence as *Most Possible Case*.
 - **Cost-Benefit**: Extract and list benefits of holding the *Original Thought* as *Benefits*, and extract and list drawbacks of holding the *Original Thought* as *Costs*.
 
-The specific design of prompts is shown in `gen_summary.py`.
+The specific design of prompts is shown in `gen_TI_Chain.py`.
 
 ### Prompts for Base Models
 
@@ -122,7 +122,7 @@ We designed two prompts for the base models, KP and UP, as described below:
 - KP: provides each test sample with the corresponding CBT TI-Chain variant, which is illustrated in *Sect. 3.2 of the paper*.  In addition to the steps detailed in *Sect. 3.2*, ***a generated example*** is added to the end of *Description of Reasoning Process* module to assist LLMs in generating counseling notes in a standardized format.
 - UP: provides generic summarization guidance for test samples without prior knowledge of the CBT strategies employed in the samples, which requires LLMs to infer the CBT strategy used. The UP prompt follows a structure similar to that shown in *Fig. 3 of the paper*. However, since the specific CBT strategies used in samples are unknown, the ***description of Thought Evaluation*** is adjusted as follows: *<u>Output the Thought Evaluation: extract the key elements based on the CBT technique used by the counselor in this dialogue. If use defense-attorney technique: ... If use region-of-possibilities technique: ... If use divergent thinking technique: ... If use cost-benefit analysis: ...</u>*
 
-The specific design of prompts is shown in `gen_summary.py`.
+The specific design of prompts is shown in `gen_baseline.py`.
 
 ## Example demonstration
 
